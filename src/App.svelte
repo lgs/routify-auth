@@ -7,9 +7,16 @@
 	setTimeout(() => window.routify.inBrowser && authStore.init())
 </script>
 
-<style global>
+<!-- style global>
 	@import "../static/app.css";
 	@import "../static/global.css";
-  </style>
+</style -->
+
+<style  global>
+  @import "../assets/global.css";
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+</style>
 
 <Router {routes} />
